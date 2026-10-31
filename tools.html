@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Olive &amp; Ember - fresh Mediterranean-style food, dine in, pick up or delivery.">
+  <title>Interactive Tools | Olive &amp; Ember</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><img src="images/logo.svg" alt="Olive and Ember logo" width="44" height="44"> Olive &amp; Ember</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="resources.html">Resource Hub</a></li>
+          <li><a href="tools.html" class="active">Interactive Tools</a></li>
+          <li><a href="services.html">Services &amp; Support</a></li>
+          <li><a href="stories.html">Success Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="order.html">Order Online</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Interactive Tools &amp; Activities</h1>
+
+    <section id="splitter">
+      <h2>Bill splitter</h2>
+      <p>Eating with friends? Enter the bill and we will split it for you.</p>
+      <form id="splitForm" novalidate>
+        <div class="field">
+          <label for="bill">Total bill (JOD)</label>
+          <input type="number" id="bill" name="bill" min="1" max="1000" step="0.5" placeholder="e.g. 42.50">
+          <span class="error" id="billError"></span>
+        </div>
+        <div class="field">
+          <label for="people">Number of people</label>
+          <input type="number" id="people" name="people" min="1" max="20" placeholder="e.g. 4">
+          <span class="error" id="peopleError"></span>
+        </div>
+        <div class="field">
+          <label for="tip">Tip</label>
+          <select id="tip" name="tip">
+            <option value="0">No tip</option>
+            <option value="5">5%</option>
+            <option value="10" selected>10%</option>
+            <option value="15">15%</option>
+          </select>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Split the bill</button>
+          <button type="reset" class="btn secondary" style="background:#eee; color:#333; border-color:#ccc;">Reset</button>
+        </div>
+        <div id="splitResult" class="result" hidden></div>
+      </form>
+    </section>
+
+    <section id="tutorial">
+      <h2>How to order (tutorial)</h2>
+      <ol>
+        <li>Open the <a href="order.html">Order Online</a> page.</li>
+        <li>Fill in your name, phone and email.</li>
+        <li>Choose your dishes and how many you want.</li>
+        <li>Pick pick-up, dine-in or delivery.</li>
+        <li>Press <strong>Calculate &amp; Review</strong> and check your order report.</li>
+      </ol>
+    </section>
+
+    <section id="media">
+      <h2>Watch &amp; listen</h2>
+      <h3>Kitchen video</h3>
+      <video controls width="640" height="360" style="max-width:100%; border-radius:10px;">
+        <source src="media/recipe.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>Relaxing dinner music</h3>
+      <audio controls>
+        <source src="media/ambience.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Olive &amp; Ember Restaurant. All rights reserved.</p>
+    <p><a href="contact.html">Contact us</a> | <a href="services.html#faq">FAQ</a> | <a href="#top">Back to top</a></p>
+  </footer>
+  <script src="js/tools.js"></script>
+</body>
+</html>
 
