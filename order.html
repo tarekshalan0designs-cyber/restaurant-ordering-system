@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Olive &amp; Ember - fresh Mediterranean-style food, dine in, pick up or delivery.">
+  <title>Order Online | Olive &amp; Ember</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><img src="images/logo.svg" alt="Olive and Ember logo" width="44" height="44"> Olive &amp; Ember</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="resources.html">Resource Hub</a></li>
+          <li><a href="tools.html">Interactive Tools</a></li>
+          <li><a href="services.html">Services &amp; Support</a></li>
+          <li><a href="stories.html">Success Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="order.html" class="active">Order Online</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Order Online</h1>
+    <p>Fill in the form, then press <strong>Calculate &amp; Review</strong>. Your order report will appear at the bottom.</p>
+
+    <form id="orderForm" action="#" method="post" novalidate>
+
+      <fieldset>
+        <legend>1. Your details</legend>
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="e.g. Sara Ahmad">
+          <span class="error" id="fullNameError"></span>
+        </div>
+        <div class="field">
+          <label for="phone">Phone (Jordan mobile)</label>
+          <input type="text" id="phone" name="phone" placeholder="07XXXXXXXX">
+          <span class="error" id="phoneError"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+          <span class="error" id="emailError"></span>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Choose your dishes</legend>
+        <div class="items-row"><label for="qty_burger">Ember Burger</label><input type="number" id="qty_burger" name="qty_burger" data-name="Ember Burger" data-price="5.50" min="0" max="20" value="0"><span class="item-price price">5.50 JOD</span></div>
+        <div class="items-row"><label for="qty_pizza">Olive Pizza</label><input type="number" id="qty_pizza" name="qty_pizza" data-name="Olive Pizza" data-price="6.00" min="0" max="20" value="0"><span class="item-price price">6.00 JOD</span></div>
+        <div class="items-row"><label for="qty_salad">Garden Salad</label><input type="number" id="qty_salad" name="qty_salad" data-name="Garden Salad" data-price="3.50" min="0" max="20" value="0"><span class="item-price price">3.50 JOD</span></div>
+        <div class="items-row"><label for="qty_pasta">Creamy Pasta</label><input type="number" id="qty_pasta" name="qty_pasta" data-name="Creamy Pasta" data-price="5.00" min="0" max="20" value="0"><span class="item-price price">5.00 JOD</span></div>
+        <span class="error" id="itemsError"></span>
+
+        <p><strong>Extras (optional)</strong></p>
+        <div class="inline">
+          <input type="checkbox" id="ex_sauce" name="extras" value="Extra sauce" data-price="0.50"><label for="ex_sauce">Extra sauce (+0.50)</label>
+          <input type="checkbox" id="ex_drink" name="extras" value="Soft drink" data-price="1.00"><label for="ex_drink">Soft drink (+1.00)</label>
+          <input type="checkbox" id="ex_dessert" name="extras" value="Dessert" data-price="2.50"><label for="ex_dessert">Dessert (+2.50)</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. How do you want it?</legend>
+        <div class="field inline">
+          <input type="radio" id="type_pickup" name="orderType" value="pickup"><label for="type_pickup">Pick up (free)</label>
+          <input type="radio" id="type_dine" name="orderType" value="dine"><label for="type_dine">Dine in (free)</label>
+          <input type="radio" id="type_delivery" name="orderType" value="delivery"><label for="type_delivery">Delivery (+2.00)</label>
+          <span class="error" id="orderTypeError"></span>
+        </div>
+        <div class="field">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date">
+          <span class="error" id="dateError"></span>
+        </div>
+        <div class="field">
+          <label for="slot">Time slot</label>
+          <select id="slot" name="slot">
+            <option value="">-- Choose a time --</option>
+            <option value="12:00 - 14:00">12:00 - 14:00</option>
+            <option value="14:00 - 17:00">14:00 - 17:00</option>
+            <option value="17:00 - 20:00">17:00 - 20:00</option>
+            <option value="20:00 - 23:00">20:00 - 23:00</option>
+          </select>
+          <span class="error" id="slotError"></span>
+        </div>
+        <div class="field">
+          <label for="area">Delivery area (delivery only)</label>
+          <input type="text" id="area" name="area" list="areas" placeholder="Start typing...">
+          <datalist id="areas">
+            <option value="Downtown">
+            <option value="Abdoun">
+            <option value="Sweifieh">
+            <option value="Jabal Amman">
+            <option value="Khalda">
+          </datalist>
+          <span class="error" id="areaError"></span>
+        </div>
+        <div class="field">
+          <label for="address">Address details (delivery only)</label>
+          <textarea id="address" name="address" rows="2" placeholder="Street, building, floor..."></textarea>
+          <span class="error" id="addressError"></span>
+        </div>
+        <div class="field">
+          <label for="payment">Payment method</label>
+          <select id="payment" name="payment">
+            <option value="">-- Choose --</option>
+            <option value="Cash">Cash</option>
+            <option value="Card">Card</option>
+          </select>
+          <span class="error" id="paymentError"></span>
+        </div>
+        <div class="field">
+          <label for="notes">Notes (optional, max 200 characters)</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="No onions, ring the bell..."></textarea>
+          <span class="error" id="notesError"></span>
+        </div>
+      </fieldset>
+
+      <div class="field inline">
+        <input type="checkbox" id="agree" name="agree" value="yes"><label for="agree">I confirm my details are correct.</label>
+        <span class="error" id="agreeError"></span>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Calculate &amp; Review</button>
+        <button type="reset" class="btn secondary" style="background:#eee; color:#333; border-color:#ccc;">Reset</button>
+      </div>
+
+      <div class="field" style="margin-top:1.2rem;">
+        <label for="report">Order report</label>
+        <textarea id="report" name="report" rows="16" readonly placeholder="Your order report will appear here after the form is valid."></textarea>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Olive &amp; Ember Restaurant. All rights reserved.</p>
+    <p><a href="contact.html">Contact us</a> | <a href="services.html#faq">FAQ</a> | <a href="#top">Back to top</a></p>
+  </footer>
+  <script src="js/order.js"></script>
+</body>
+</html>
 
