@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,8 @@
   <meta name="description" content="Olive &amp; Ember - fresh Mediterranean-style food, dine in, pick up or delivery.">
   <title>Order Online | Olive &amp; Ember</title>
   <!-- External CSS -->
+
+<!--
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -150,3 +153,156 @@
 </body>
 </html>
 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Velora - fresh Mediterranean-style food, dine in, pick up or delivery.">
+  <title>Order Online | Velora</title>
+</head>
+<body>
+  <div id="top">
+    <a href="index.html"><img src="images/velora.svg" alt="Velora logo" width="44" height="44"> Velora</a>
+    <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="resources.html">Resource Hub</a></li>
+          <li><a href="tools.html">Interactive Tools</a></li>
+          <li><a href="services.html">Services &amp; Support</a></li>
+          <li><a href="stories.html">Success Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="order.html">Order Online</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <hr>
+
+  <div id="content">
+    <h1>Order Online</h1>
+    <p>Fill in the form, then press <strong>Submit order</strong>.</p>
+
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>1. Your details</legend>
+        <div>
+          Full name (for example Sara Ahmad):<br>
+          <input type="text" id="fullName" name="fullName">
+        </div>
+        <div>
+          Phone (Jordan mobile, like 0791234567):<br>
+          <input type="text" id="phone" name="phone">
+        </div>
+        <div>
+          Email:<br>
+          <input type="email" id="email" name="email">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Choose your dishes</legend>
+        <table border="1">
+          <tr><th>Dish</th><th>Price</th><th>Quantity (0 - 20)</th></tr>
+        <tr>
+          <td>Ember Burger</td>
+          <td>5.50 JOD</td>
+          <td><input type="number" id="qty_burger" name="qty_burger" min="0" max="20" value="0"></td>
+        </tr>
+        <tr>
+          <td>Olive Pizza</td>
+          <td>6.00 JOD</td>
+          <td><input type="number" id="qty_pizza" name="qty_pizza" min="0" max="20" value="0"></td>
+        </tr>
+        <tr>
+          <td>Garden Salad</td>
+          <td>3.50 JOD</td>
+          <td><input type="number" id="qty_salad" name="qty_salad" min="0" max="20" value="0"></td>
+        </tr>
+        <tr>
+          <td>Creamy Pasta</td>
+          <td>5.00 JOD</td>
+          <td><input type="number" id="qty_pasta" name="qty_pasta" min="0" max="20" value="0"></td>
+        </tr>
+        </table>
+
+        <p><strong>Extras (optional)</strong></p>
+        <input type="checkbox" name="extras" value="Extra sauce"> Extra sauce (+0.50 JOD)<br>
+        <input type="checkbox" name="extras" value="Soft drink"> Soft drink (+1.00 JOD)<br>
+        <input type="checkbox" name="extras" value="Dessert"> Dessert (+2.50 JOD)
+      </fieldset>
+
+      <fieldset>
+        <legend>3. How do you want it?</legend>
+        <div>
+          <input type="radio" name="orderType" value="pickup"> Pick up (free)<br>
+          <input type="radio" name="orderType" value="dine"> Dine in (free)<br>
+          <input type="radio" name="orderType" value="delivery"> Delivery (+2.00 JOD)
+        </div>
+        <div>
+          Date:<br>
+          <input type="date" id="date" name="date">
+        </div>
+        <div>
+          Time slot:<br>
+          <select id="slot" name="slot">
+            <option value="">-- Choose a time --</option>
+            <option value="12:00 - 14:00">12:00 - 14:00</option>
+            <option value="14:00 - 17:00">14:00 - 17:00</option>
+            <option value="17:00 - 20:00">17:00 - 20:00</option>
+            <option value="20:00 - 23:00">20:00 - 23:00</option>
+          </select>
+        </div>
+        <div>
+          Delivery area (delivery only, start typing):<br>
+          <input type="text" id="area" name="area" list="areas">
+          <datalist id="areas">
+            <option value="Downtown">
+            <option value="Abdoun">
+            <option value="Sweifieh">
+            <option value="Jabal Amman">
+            <option value="Khalda">
+          </datalist>
+        </div>
+        <div>
+          Address details (delivery only - street, building, floor):<br>
+          <textarea id="address" name="address" rows="2" cols="40"></textarea>
+        </div>
+        <div>
+          Payment method:<br>
+          <select id="payment" name="payment">
+            <option value="">-- Choose --</option>
+            <option value="Cash">Cash</option>
+            <option value="Card">Card</option>
+          </select>
+        </div>
+        <div>
+          Notes (optional, max 200 characters):<br>
+          <textarea id="notes" name="notes" rows="3" cols="40"></textarea>
+        </div>
+      </fieldset>
+
+      <div>
+        <input type="checkbox" id="agree" name="agree" value="yes"> I confirm my details are correct.
+      </div>
+
+      <p>
+        <input type="submit" value="Submit order">
+        <input type="reset" value="Reset">
+      </p>
+    </form>
+
+  </div>
+
+  <hr>
+  <div>
+    <p>&copy; 2026 Velora Restaurant. All rights reserved.</p>
+    <p><a href="contact.html">Contact us</a> | <a href="services.html#faq">FAQ</a> | <a href="#top">Back to top</a></p>
+  </div>
+</body>
+</html>
