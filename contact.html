@@ -1,70 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Olive &amp; Ember - fresh Mediterranean-style food, dine in, pick up or delivery.">
-  <title>Contact | Olive &amp; Ember</title>
-  <!-- External CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <title>Contact | VELORA</title>
+<!--code contact from mostafa-->
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html"><img src="images/logo.svg" alt="Olive and Ember logo" width="44" height="44"> Olive &amp; Ember</a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
+
+  <div id="top">
+    <a href="home.html"><img src="images/logo.svg" alt="Velora logo" width="44" height="44"> Velora</a>
+
+    <nav>
+
+      <ul>
+          <li><a href="home.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="resources.html">Resource Hub</a></li>
           <li><a href="tools.html">Interactive Tools</a></li>
           <li><a href="services.html">Services &amp; Support</a></li>
           <li><a href="stories.html">Success Stories</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="order.html">Order Online</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      </ul>
 
-  <main>
-    <h1>Contact Us</h1>
-    <section id="info">
-      <h2>Get in touch</h2>
+    </nav>
+
+  </div>
+
+
+  <hr>
+
+
+  <div id="content">
+
+    <div>
+
+      <h1>Contact Us</h1>
+
+      <p>Have a question, a booking request or feedback? We would love to hear from you.</p>
+
+      <p>Jump to:</p>
+
       <ul>
-        <li><strong>Email:</strong> <a href="mailto:hello@oliveandember.example">hello@oliveandember.example</a></li>
+        <li><a href="#departments">Who to contact</a></li>
+        <li><a href="#info">Get in touch</a></li>
+        <li><a href="#hours">Opening hours</a></li>
+        <li><a href="#directions">How to find us</a></li>
+        <li><a href="#message">Send us a message</a></li>
+        <li><a href="#social">Follow us</a></li>
+      </ul>
+
+    </div>
+
+    <div id="departments">
+
+      <h2>Who to contact</h2>
+
+      <ul>
+        <li>Reservations
+          <ul>
+            <li>Tables for 2 to 10 people</li>
+            <li>Birthdays and special events</li>
+          </ul>
+        </li>
+        <li>Orders and delivery
+          <ul>
+            <li>Changing or cancelling an order</li>
+            <li>Delivery problems</li>
+          </ul>
+        </li>
+        <li>Catering
+          <ul>
+            <li>Weddings, meetings and parties</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>For all of these, email us at <a href="mailto:hello@velora.example">hello@velora.example</a> and we will reply within 24 hours.</p>
+
+    </div>
+
+    <div id="info">
+
+      <h2>Get in touch</h2>
+
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:hello@velora.example">hello@velora.example</a></li>
         <li><strong>Phone:</strong> 06 555 0123</li>
         <li><strong>Address:</strong> 12 Olive Street, Amman, Jordan</li>
       </ul>
-    </section>
 
-    <section id="hours">
+    </div>
+
+    <div id="hours">
+
       <h2>Opening hours</h2>
-      <div class="table-wrap">
-      <table border="1">
-        <caption>Opening hours</caption>
-        <tr><th>Day</th><th>Hours</th></tr>
-        <tr><td>Saturday - Thursday</td><td>11:00 AM - 11:00 PM</td></tr>
-        <tr><td>Friday</td><td>1:00 PM - midnight</td></tr>
-      </table>
-      </div>
-    </section>
 
-    <section id="social">
+      <table border="1">
+
+        <caption>When you can find us</caption>
+
+        <tr><th>Day</th><th>Opens</th><th>Closes</th></tr>
+        <tr><td>Saturday - Thursday</td><td>11:00 AM</td><td>11:00 PM</td></tr>
+        <tr><td>Friday</td><td>1:00 PM</td><td>midnight</td></tr>
+
+      </table>
+
+    </div>
+
+    <div id="directions">
+
+      <h2>How to find us</h2>
+
+      <ol>
+        <li>Head to Olive Street in Amman.</li>
+        <li>Look for the VELORA sign at number 12.</li>
+        <li>Parking is available next to the restaurant.</li>
+      </ol>
+
+    </div>
+
+    <div id="message">
+
+      <h2>Send us a message</h2>
+
+      <form action="#" method="post">
+
+        <fieldset>
+
+          <legend>Your message</legend>
+
+          <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name">
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email">
+          </p>
+
+          <p>
+            <label for="subject">Subject:</label><br>
+            <select id="subject" name="subject">
+              <option value="question">Question</option>
+              <option value="booking">Table booking</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </p>
+
+          <p>How would you like us to reply?</p>
+
+          <p>
+            <input type="radio" id="reply-email" name="reply" value="email">
+            <label for="reply-email">Email</label>
+            <input type="radio" id="reply-phone" name="reply" value="phone">
+            <label for="reply-phone">Phone</label>
+          </p>
+
+          <p>What is this about? (choose any)</p>
+
+          <p>
+            <input type="checkbox" id="about-food" name="about" value="food">
+            <label for="about-food">Food</label>
+            <input type="checkbox" id="about-service" name="about" value="service">
+            <label for="about-service">Service</label>
+            <input type="checkbox" id="about-other" name="about" value="other">
+            <label for="about-other">Other</label>
+          </p>
+
+          <p>
+            <label for="msg">Message:</label><br>
+            <textarea id="msg" name="msg" rows="5" cols="40"></textarea>
+          </p>
+
+          <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+          </p>
+
+        </fieldset>
+
+      </form>
+
+    </div>
+
+    <div id="social">
+
       <h2>Follow us</h2>
+
       <ul>
         <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
         <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
         <li><a href="https://www.tiktok.com/" target="_blank">TikTok</a></li>
       </ul>
-      <p>Prefer to order? Go to the <a href="order.html">order form</a>.</p>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Olive &amp; Ember Restaurant. All rights reserved.</p>
+      <p>Prefer to order? Go to the <a href="order.html">order page</a>.</p>
+
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div>
+
+    <p>&copy; 2026 VELORA Restaurant. All rights reserved.</p>
+
     <p><a href="contact.html">Contact us</a> | <a href="services.html#faq">FAQ</a> | <a href="#top">Back to top</a></p>
-  </footer>
+
+  </div>
+
 </body>
+
 </html>
+
+          
+
 
