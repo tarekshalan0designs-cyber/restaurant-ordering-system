@@ -139,3 +139,10 @@ input, select, textarea{
 }
 
 .footer a { color: #D4AF37; }
+
+
+.footer a:visited{
+
+    color: purple;
+
+}
