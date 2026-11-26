@@ -290,3 +290,45 @@ input, select, textarea{
 }
 
 
+
+/*Blocks of texts*/
+.quote{
+
+    border-left: 5px solid #D4AF37 ;
+    padding-left: 12px;
+
+}
+
+.who{
+
+
+    font-size: 90%;
+    color: #3A3D2F;
+
+}
+
+
+.toc{
+
+    padding: 10px 20px;
+
+}
+
+
+.note{
+
+    background-color: white;
+    border-left: 5px solid #D4AF37;
+    padding: 10px 14px;
+
+}
+
+
+.price{
+
+    color: #3A3D2F;
+    font-weight: bold;
+
+}
+
+
