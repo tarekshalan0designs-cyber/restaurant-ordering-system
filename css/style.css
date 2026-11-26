@@ -153,10 +153,11 @@ input, select, textarea{
 
 .hero{
 
-    border: 3px double #D4AF37;
+    border: 5px solid #D4AF37;
     background-color: #171717;
     color: #F7F3E9;
     padding: 30px;
+    text-align: center;
 
 
 }
@@ -173,6 +174,17 @@ input, select, textarea{
 .hero p{
 
     font-size: 110%;
+
+
+}
+
+
+.hero img{
+
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 15px auto;
+    display: block;
 
 
 }
