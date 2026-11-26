@@ -331,4 +331,12 @@ input, select, textarea{
 
 }
 
+/*order report and bill result*/
+#report, #splitResult { 
+    background-color: #F7F3E9; 
+    border: 2px solid #D4AF37; 
+    padding: 14px; }
 
+#report { 
+    font-family: "Courier New", monospace; 
+}
