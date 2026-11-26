@@ -146,3 +146,33 @@ input, select, textarea{
     color: purple;
 
 }
+
+
+
+/*Hero section*/
+
+.hero{
+
+    background-color: #171717;
+    color: #F7F3E9;
+    padding: 30px;
+
+
+}
+
+
+.hero h1{
+
+    color: #D4AF37;
+    margin-top: 0;
+
+}
+
+
+.hero p{
+
+    font-size: 110%;
+
+
+}
+
