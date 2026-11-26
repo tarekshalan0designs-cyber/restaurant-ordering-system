@@ -343,10 +343,6 @@ input, select, textarea{
 
 
 
-/* images and videos */
-img, video { max-width: 100%; height: auto; }
-
-
 
 /*navbar*/
 #top { 
