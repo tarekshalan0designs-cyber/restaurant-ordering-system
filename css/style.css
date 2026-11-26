@@ -153,6 +153,7 @@ input, select, textarea{
 
 .hero{
 
+    border: 3px double #D4AF37;
     background-color: #171717;
     color: #F7F3E9;
     padding: 30px;
@@ -176,3 +177,55 @@ input, select, textarea{
 
 }
 
+
+
+/*layout*/
+
+#content{
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+
+
+}
+
+.section{
+
+    margin-bottom: 30px;
+
+
+}
+
+/*Cards*/
+
+.card{
+
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    margin: 8px;
+    padding: 12px;
+
+}
+
+
+.card h3{
+
+    margin-top: 0;
+
+}
+
+
+.card, form, table {
+
+    background-color: white;
+
+}
+
+.card , form{
+
+    border: 1px solid #A89B87;
+
+
+}
