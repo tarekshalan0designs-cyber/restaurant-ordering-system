@@ -77,6 +77,14 @@ tr:hover {
 /*Forms*/
 
 
+#splitter .field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 0;
+}
+
+
 form{
     padding: 20px;
 }
