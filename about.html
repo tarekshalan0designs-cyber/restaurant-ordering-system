@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Velora - fresh Mediterranean-style food, dine in, pick up or delivery.">
-  <title>Abous Us | Velora</title>
+  <title>About Us | Velora</title>
   <link rel="stylesheet" href="css/style.css">
   
 </head>
 <body>
   <div id="top">
-    <a href="index.html"><img src="images/velora.svg" alt="Velora logo" width="44" height="44"> Velora</a>
+    <a class="brand" href="index.html"><img src="images/velora.svg" alt="Velora logo" width="44" height="44"> Velora</a>
     <nav>
       <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html" class="active" >About Us</a></li>
           <li><a href="resources.html">Resource Hub</a></li>
           <li><a href="tools.html">Interactive Tools</a></li>
           <li><a href="services.html">Services &amp; Support</a></li>
@@ -25,22 +25,28 @@
     </nav>
   </div>
 
-  <hr>
-  <h1>VELORA</h1>
-  <h2>Our mission</h2>
-  <p>We believe good food should be simple, honest and shared. Our mission is to serve fresh, tasty meals at a fair price and to make ordering as easy as it can be.</p>
 
-  <h3>Our objectives</h3>
+  <div id="content">
 
-  <ol>
+    <h1>VELORA</h1>
+
+    <div class="section">
+      <h2>Our mission</h2>
+      <p>We believe good food should be simple, honest and shared. Our mission is to serve fresh, tasty meals at a fair price and to make ordering as easy as it can be.</p>
+
+      <h3>Our objectives</h3>
+      <ol>
         <li>Serve fresh food made from quality ingredients.</li>
         <li>Make ordering quick, clear and friendly.</li>
         <li>Offer healthy choices for every taste.</li>
         <li>Support the local farmers we buy from.</li>
       </ol>
+    </div>
 
-   <h2>What we offer you</h2>
-   <ul>
+
+    <div class="section">
+      <h2>What we offer you</h2>
+      <ul>
         <li>Food
           <ul>
             <li>Daily fresh menu</li>
@@ -54,20 +60,35 @@
           </ul>
         </li>
       </ul>
-    
-      <p>Every table gets free filtered Water. We are also proud to celebrate our 10th year in 2026!</p>
+      <p>Every table gets free filtered water. We are also proud to celebrate our 10th year in 2026!</p>
+    </div>
 
+
+
+    <div class="section" id="team">
       <h2>Meet the team</h2>
-    
-       <figure><img src="images/gordon.jpg" alt="Head chef" width="300" height="200"><figcaption><em>Gordon Ramsay - Head Chef</em></figcaption></figure>
-          <p><strong>Plans the menu and loves fire-grilled flavours.</strong></p>
-           <figure><img src="images/chef2.jpg" alt="Pastry chef" width="300" height="200"><figcaption><em>Alain Ducasse - Pastry Chef</em></figcaption></figure>
-          <p><Strong>Bakes the desserts and the bread every morning.</strong></p>
-          <figure><img src="images/chef3.jpg" alt="Restaurant manager" width="300" height="200"><figcaption><em>Joel Robuchon - Manager</em></figcaption></figure>
-          <p><strong>Keeps the kitchen, the tables and the orders running.</strong></p>
-           <p><a href="contact.html">Get in touch with us</a> or <a href="index.html#hours">check our opening hours</a>.</p>
-           <hr>
-           <div class="footer">
+
+      <div class="card">
+        <figure><img src="images/gordon.jpg" alt="Head chef" width="300" height="200"><figcaption>Gordon Ramsay - Head Chef</figcaption></figure>
+        <p><strong>Plans the menu and loves fire-grilled flavours.</strong></p>
+      </div>
+
+      <div class="card">
+        <figure><img src="images/chef2.jpg" alt="Pastry chef" width="300" height="200"><figcaption>Alain Ducasse - Pastry Chef</figcaption></figure>
+        <p><strong>Bakes the desserts and the bread every morning.</strong></p>
+      </div>
+
+      <div class="card">
+        <figure><img src="images/chef3.jpg" alt="Restaurant manager" width="300" height="200"><figcaption>Joel Robuchon - Manager</figcaption></figure>
+        <p><strong>Keeps the kitchen, the tables and the orders running.</strong></p>
+      </div>
+
+      <p><a href="contact.html">Get in touch with us</a> or <a href="index.html#hours">check our opening hours</a>.</p>
+    </div>
+  </div>
+
+
+  <div class="footer">
     <p>&copy; 2026 Velora Restaurant. All rights reserved.</p>
     <p><a href="contact.html">Contact us</a> | <a href="services.html#faq">FAQ</a> | <a href="#top">Back to top</a></p>
   </div>
