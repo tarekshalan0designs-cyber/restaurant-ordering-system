@@ -9,13 +9,13 @@
 </head>
 <body>
   <div id="top">
-    <a href="index.html"><img src="images/velora.svg" alt="Velora logo" width="44" height="44"> Velora</a>
+    <a class="brand" href="index.html"><img src="images/velora.svg" alt="Velora logo" width="44" height="44"> Velora</a>
     <nav>
       <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="resources.html">Resource Hub</a></li>
-          <li><a href="tools.html">Interactive Tools</a></li>
+          <li><a href="tools.html" class="active" >Interactive Tools</a></li>
           <li><a href="services.html">Services &amp; Support</a></li>
           <li><a href="stories.html">Success Stories</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -24,24 +24,23 @@
     </nav>
   </div>
 
-  <hr>
 
   <div id="content">
     <h1>Interactive Tools &amp; Activities</h1>
 
-    <div id="splitter">
+    <div class="section" id="splitter">
       <h2>Bill splitter</h2>
       <p>Eating with friends? Enter the bill and we will split it for you.</p>
       <form action="#" method="post">
-        <div>
+        <div class="field" >
           Total bill (JOD):<br>
           <input type="number" id="bill" name="bill" min="1" max="1000" step="0.01">
         </div>
-        <div>
+        <div class="field" >
           Number of people:<br>
           <input type="number" id="people" name="people" min="1" max="20">
         </div>
-        <div>
+        <div class="field" >
           Tip:<br>
           <select id="tip" name="tip">
             <option value="0">No tip</option>
@@ -51,13 +50,13 @@
           </select>
         </div>
         <p>
-          <input type="submit" value="Split the bill">
-          <input type="reset" value="Reset">
+          <input class="btn" type="submit" value="Split the bill">
+          <input class="btn reset" type="reset" value="Reset">
         </p>
       </form>
     </div>
 
-    <div id="tutorial">
+    <div  class="section" id="tutorial">
       <h2>How to order (tutorial)</h2>
       <ol>
         <li>Open the <a href="order.html">Order Online</a> page.</li>
@@ -68,7 +67,7 @@
       </ol>
     </div>
 
-    <div id="media">
+    <div  class="section" id="media">
       <h2>Watch &amp; listen</h2>
       <h3>Kitchen video</h3>
       <video controls width="640" height="360">
@@ -83,7 +82,7 @@
     </div>
   </div>
 
-  <hr>
+  
   <div class="footer">
     <p>&copy; 2026 Velora Restaurant. All rights reserved.</p>
     <p><a href="contact.html">Contact us</a> | <a href="services.html#faq">FAQ</a> | <a href="#top">Back to top</a></p>
