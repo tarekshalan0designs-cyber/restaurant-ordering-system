@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id="top">
-    <a href="index.html"><img src="images/velora.svg" alt="Velora logo" width="44" height="44"> Velora</a>
+    <a class="brand"  href="index.html"><img src="images/velora.svg" alt="Velora logo" width="44" height="44"> Velora</a>
     <nav>
       <ul>
           <li><a href="index.html">Home</a></li>
@@ -19,12 +19,11 @@
           <li><a href="services.html">Services &amp; Support</a></li>
           <li><a href="stories.html">Success Stories</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="order.html">Order Online</a></li>
+          <li><a href="order.html" class="active" >Order Online</a></li>
       </ul>
     </nav>
   </div>
 
-  <hr>
 
   <div id="content">
     <h1>Order Online</h1>
@@ -34,17 +33,17 @@
 
       <fieldset>
         <legend>1. Your details</legend>
-        <div>
+        <div class="field" >
           Full name (for example Sara Ahmad):<br>
-          <input type="text" id="fullName" name="fullName">
+          <input class="wide" type="text" id="fullName" name="fullName">
         </div>
-        <div>
+        <div class="field" >
           Phone (Jordan mobile, like 0791234567):<br>
-          <input type="text" id="phone" name="phone">
+          <input class="wide" type="text" id="phone" name="phone">
         </div>
-        <div>
+        <div class="field" >
           Email:<br>
-          <input type="email" id="email" name="email">
+          <input class="wide" type="email" id="email" name="email">
         </div>
       </fieldset>
 
@@ -54,23 +53,23 @@
           <tr><th>Dish</th><th>Price</th><th>Quantity (0 - 20)</th></tr>
         <tr>
           <td>Ember Burger</td>
-          <td>5.50 JOD</td>
-          <td><input type="number" id="qty_burger" name="qty_burger" min="0" max="20" value="0"></td>
+          <td class="price" >5.50 JOD</td>
+          <td class="qty" ><input type="number" id="qty_burger" name="qty_burger" min="0" max="20" value="0"></td>
         </tr>
         <tr>
           <td>Olive Pizza</td>
-          <td>6.00 JOD</td>
-          <td><input type="number" id="qty_pizza" name="qty_pizza" min="0" max="20" value="0"></td>
+          <td class="price" >6.00 JOD</td>
+          <td class="qty" ><input type="number" id="qty_pizza" name="qty_pizza" min="0" max="20" value="0"></td>
         </tr>
         <tr>
           <td>Garden Salad</td>
-          <td>3.50 JOD</td>
+          <td class="price" >3.50 JOD</td>
           <td><input type="number" id="qty_salad" name="qty_salad" min="0" max="20" value="0"></td>
         </tr>
         <tr>
           <td>Creamy Pasta</td>
-          <td>5.00 JOD</td>
-          <td><input type="number" id="qty_pasta" name="qty_pasta" min="0" max="20" value="0"></td>
+          <td class="price" >5.00 JOD</td>
+          <td class="qty" ><input type="number" id="qty_pasta" name="qty_pasta" min="0" max="20" value="0"></td>
         </tr>
         </table>
 
@@ -82,16 +81,16 @@
 
       <fieldset>
         <legend>3. How do you want it?</legend>
-        <div>
+        <div class="field" >
           <input type="radio" name="orderType" value="pickup"> Pick up (free)<br>
           <input type="radio" name="orderType" value="dine"> Dine in (free)<br>
           <input type="radio" name="orderType" value="delivery"> Delivery (+2.00 JOD)
         </div>
-        <div>
+        <div class="field" >
           Date:<br>
           <input type="date" id="date" name="date">
         </div>
-        <div>
+        <div class="field" >
           Time slot:<br>
           <select id="slot" name="slot">
             <option value="">-- Choose a time --</option>
@@ -103,7 +102,7 @@
         </div>
         <div>
           Delivery area (delivery only, start typing):<br>
-          <input type="text" id="area" name="area" list="areas">
+          <input class="wide" type="text" id="area" name="area" list="areas">
           <datalist id="areas">
             <option value="Downtown">
             <option value="Abdoun">
@@ -112,11 +111,11 @@
             <option value="Khalda">
           </datalist>
         </div>
-        <div>
+        <div class="field" >
           Address details (delivery only - street, building, floor):<br>
-          <textarea id="address" name="address" rows="2" cols="40"></textarea>
+          <textarea class="wide" id="address" name="address" rows="2" cols="40"></textarea>
         </div>
-        <div>
+        <div class="field" >
           Payment method:<br>
           <select id="payment" name="payment">
             <option value="">-- Choose --</option>
@@ -124,28 +123,33 @@
             <option value="Card">Card</option>
           </select>
         </div>
-        <div>
+        <div class="field" >
           Notes (optional, max 200 characters):<br>
-          <textarea id="notes" name="notes" rows="3" cols="40"></textarea>
+          <textarea class="wide" id="notes" name="notes" rows="3" cols="40"></textarea>
         </div>
       </fieldset>
 
-      <div>
+      <div class="field" >
         <input type="checkbox" id="agree" name="agree" value="yes"> I confirm my details are correct.
       </div>
 
       <p>
-        <input type="submit" value="Submit order">
-        <input type="reset" value="Reset">
+        <input  class="btn" type="submit" value="Submit order">
+        <input class="btn reset"  type="reset" value="Reset">
       </p>
     </form>
 
   </div>
 
-  <hr>
+  
   <div class="footer">
+    
     <p>&copy; 2026 Velora Restaurant. All rights reserved.</p>
+    
     <p><a href="contact.html">Contact us</a> | <a href="services.html#faq">FAQ</a> | <a href="#top">Back to top</a></p>
+    
   </div>
+  
 </body>
+  
 </html>
